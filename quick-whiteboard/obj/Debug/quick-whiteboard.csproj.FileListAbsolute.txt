@@ -1,0 +1,11 @@
+D:\Projects\quick-whiteboard\quick-whiteboard\bin\Debug\quick-whiteboard.exe.config
+D:\Projects\quick-whiteboard\quick-whiteboard\bin\Debug\quick-whiteboard.exe
+D:\Projects\quick-whiteboard\quick-whiteboard\bin\Debug\quick-whiteboard.pdb
+D:\Projects\quick-whiteboard\quick-whiteboard\obj\Debug\quick-whiteboard.csprojAssemblyReference.cache
+D:\Projects\quick-whiteboard\quick-whiteboard\obj\Debug\quick_whiteboard.Properties.Resources.resources
+D:\Projects\quick-whiteboard\quick-whiteboard\obj\Debug\quick_whiteboard.WhiteboardForm.resources
+D:\Projects\quick-whiteboard\quick-whiteboard\obj\Debug\quick-whiteboard.csproj.GenerateResource.cache
+D:\Projects\quick-whiteboard\quick-whiteboard\obj\Debug\quick-whiteboard.exe
+D:\Projects\quick-whiteboard\quick-whiteboard\obj\Debug\quick-whiteboard.pdb
+D:\Projects\quick-whiteboard\quick-whiteboard\obj\Debug\Interop.Shell32.dll
+D:\Projects\quick-whiteboard\quick-whiteboard\obj\Debug\quick-whiteboard.csproj.ResolveComReference.cache
