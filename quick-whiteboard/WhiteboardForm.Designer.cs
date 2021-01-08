@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WhiteboardForm));
 			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 			this.colorDialog1 = new System.Windows.Forms.ColorDialog();
 			this.drawPanel = new quick_whiteboard.DrawPanel();
@@ -41,9 +42,13 @@
 			this.weightSlider = new System.Windows.Forms.TrackBar();
 			this.clearBtn = new System.Windows.Forms.Button();
 			this.rectBtn = new System.Windows.Forms.Button();
+			this.fillPanel = new quick_whiteboard.ToolPanel();
+			this.fillCheckBox = new System.Windows.Forms.CheckBox();
+			this.elipseBtn = new System.Windows.Forms.Button();
 			this.drawPanel.SuspendLayout();
 			this.weightPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.weightSlider)).BeginInit();
+			this.fillPanel.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// openFileDialog1
@@ -52,7 +57,7 @@
 			// 
 			// colorDialog1
 			// 
-			this.colorDialog1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.colorDialog1.Color = System.Drawing.Color.Red;
 			// 
 			// drawPanel
 			// 
@@ -64,6 +69,8 @@
 			this.drawPanel.Controls.Add(this.weightPanel);
 			this.drawPanel.Controls.Add(this.clearBtn);
 			this.drawPanel.Controls.Add(this.rectBtn);
+			this.drawPanel.Controls.Add(this.fillPanel);
+			this.drawPanel.Controls.Add(this.elipseBtn);
 			this.drawPanel.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.drawPanel.Location = new System.Drawing.Point(0, 0);
 			this.drawPanel.Margin = new System.Windows.Forms.Padding(0);
@@ -92,11 +99,11 @@
 			// 
 			// penBtn
 			// 
-			this.penBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.penBtn.BackColor = System.Drawing.Color.Red;
 			this.penBtn.Cursor = System.Windows.Forms.Cursors.Default;
 			this.penBtn.FlatAppearance.BorderColor = System.Drawing.Color.Red;
 			this.penBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.penBtn.Location = new System.Drawing.Point(187, 0);
+			this.penBtn.Location = new System.Drawing.Point(240, 0);
 			this.penBtn.Margin = new System.Windows.Forms.Padding(0);
 			this.penBtn.Name = "penBtn";
 			this.penBtn.Size = new System.Drawing.Size(64, 32);
@@ -111,7 +118,7 @@
 			this.lineBtn.Cursor = System.Windows.Forms.Cursors.Default;
 			this.lineBtn.FlatAppearance.BorderColor = System.Drawing.Color.Red;
 			this.lineBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.lineBtn.Location = new System.Drawing.Point(250, 0);
+			this.lineBtn.Location = new System.Drawing.Point(303, 0);
 			this.lineBtn.Margin = new System.Windows.Forms.Padding(0);
 			this.lineBtn.Name = "lineBtn";
 			this.lineBtn.Size = new System.Drawing.Size(64, 32);
@@ -138,7 +145,7 @@
 			// 
 			// colorBtn
 			// 
-			this.colorBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.colorBtn.BackColor = System.Drawing.Color.Red;
 			this.colorBtn.Cursor = System.Windows.Forms.Cursors.Default;
 			this.colorBtn.FlatAppearance.BorderColor = System.Drawing.Color.Red;
 			this.colorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -149,6 +156,7 @@
 			this.colorBtn.TabIndex = 2;
 			this.colorBtn.Text = "Color";
 			this.colorBtn.UseVisualStyleBackColor = false;
+			this.colorBtn.BackColorChanged += new System.EventHandler(this.colorBtn_BackColorChanged);
 			this.colorBtn.Click += new System.EventHandler(this.colorBtn_Click);
 			// 
 			// weightPanel
@@ -210,7 +218,7 @@
 			this.rectBtn.Cursor = System.Windows.Forms.Cursors.Default;
 			this.rectBtn.FlatAppearance.BorderColor = System.Drawing.Color.Red;
 			this.rectBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.rectBtn.Location = new System.Drawing.Point(313, 0);
+			this.rectBtn.Location = new System.Drawing.Point(366, 0);
 			this.rectBtn.Margin = new System.Windows.Forms.Padding(0);
 			this.rectBtn.Name = "rectBtn";
 			this.rectBtn.Size = new System.Drawing.Size(64, 32);
@@ -218,6 +226,44 @@
 			this.rectBtn.Text = "Rect";
 			this.rectBtn.UseVisualStyleBackColor = false;
 			this.rectBtn.Click += new System.EventHandler(this.rectBtn_Click);
+			// 
+			// fillPanel
+			// 
+			this.fillPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.fillPanel.Controls.Add(this.fillCheckBox);
+			this.fillPanel.Cursor = System.Windows.Forms.Cursors.Default;
+			this.fillPanel.Location = new System.Drawing.Point(187, 0);
+			this.fillPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.fillPanel.Name = "fillPanel";
+			this.fillPanel.Size = new System.Drawing.Size(54, 32);
+			this.fillPanel.TabIndex = 10;
+			// 
+			// fillCheckBox
+			// 
+			this.fillCheckBox.AutoSize = true;
+			this.fillCheckBox.Enabled = false;
+			this.fillCheckBox.Location = new System.Drawing.Point(9, 6);
+			this.fillCheckBox.Name = "fillCheckBox";
+			this.fillCheckBox.Size = new System.Drawing.Size(42, 21);
+			this.fillCheckBox.TabIndex = 0;
+			this.fillCheckBox.Text = "Fill";
+			this.fillCheckBox.UseVisualStyleBackColor = true;
+			this.fillCheckBox.CheckedChanged += new System.EventHandler(this.fillCheckBox_CheckedChanged);
+			// 
+			// elipseBtn
+			// 
+			this.elipseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.elipseBtn.Cursor = System.Windows.Forms.Cursors.Default;
+			this.elipseBtn.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+			this.elipseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.elipseBtn.Location = new System.Drawing.Point(429, 0);
+			this.elipseBtn.Margin = new System.Windows.Forms.Padding(0);
+			this.elipseBtn.Name = "elipseBtn";
+			this.elipseBtn.Size = new System.Drawing.Size(64, 32);
+			this.elipseBtn.TabIndex = 11;
+			this.elipseBtn.Text = "Elipse";
+			this.elipseBtn.UseVisualStyleBackColor = false;
+			this.elipseBtn.Click += new System.EventHandler(this.elipseBtn_Click);
 			// 
 			// WhiteboardForm
 			// 
@@ -229,6 +275,7 @@
 			this.Cursor = System.Windows.Forms.Cursors.Cross;
 			this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.KeyPreview = true;
 			this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.Name = "WhiteboardForm";
@@ -241,6 +288,8 @@
 			this.weightPanel.ResumeLayout(false);
 			this.weightPanel.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.weightSlider)).EndInit();
+			this.fillPanel.ResumeLayout(false);
+			this.fillPanel.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -259,6 +308,9 @@
 		private System.Windows.Forms.Button penBtn;
 		private System.Windows.Forms.Button lineBtn;
 		private System.Windows.Forms.Button rectBtn;
+		private ToolPanel fillPanel;
+		private System.Windows.Forms.CheckBox fillCheckBox;
+		private System.Windows.Forms.Button elipseBtn;
 	}
 }
 

@@ -25,13 +25,49 @@ namespace quick_whiteboard.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string CurrentQwb {
+        [global::System.Configuration.DefaultSettingValueAttribute("pen")]
+        public string Tool {
             get {
-                return ((string)(this["CurrentQwb"]));
+                return ((string)(this["Tool"]));
             }
             set {
-                this["CurrentQwb"] = value;
+                this["Tool"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        public int Weight {
+            get {
+                return ((int)(this["Weight"]));
+            }
+            set {
+                this["Weight"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Fill {
+            get {
+                return ((bool)(this["Fill"]));
+            }
+            set {
+                this["Fill"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Red")]
+        public global::System.Drawing.Color Color {
+            get {
+                return ((global::System.Drawing.Color)(this["Color"]));
+            }
+            set {
+                this["Color"] = value;
             }
         }
     }
