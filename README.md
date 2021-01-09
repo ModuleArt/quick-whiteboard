@@ -28,9 +28,9 @@
 
 <h2 align="center">Install</h2>
 
-| Windows | Version | Codename | Release date | Size | Downloads | |
+| Windows | Version | Codename | Release date | Size | Downloads | Installer |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 7-10 | <a href="https://github.com/ModuleArt/quick-whiteboard/releases/tag/v1.0.1">v1.0.1</a> (Stable) | Froggy | Jan 9, 2021 | 1.7 MB | ![GitHub Releases (by Release)](https://img.shields.io/github/downloads/ModuleArt/quick-whiteboard/v1.0.1/total?label=latest%40v1.0.1) | <a href="https://github.com/ModuleArt/quick-whiteboard/releases/download/v1.0.1/QuickWhiteboard-Setup.exe">Download</a> |
+| 7-10 | <a href="https://github.com/ModuleArt/quick-whiteboard/releases/tag/v1.0.1">v1.0.1</a> (Stable) | Froggy | Jan 9, 2021 | 1.7 MB | ![GitHub Releases (by Release)](https://img.shields.io/github/downloads/ModuleArt/quick-whiteboard/v1.0.1/total?label=latest%40v1.0.1) | <a href="https://github.com/ModuleArt/quick-whiteboard/releases/download/v1.0.1/QuickWhiteboard-Setup.exe">Download (.exe)</a> |
 
 <h2 align="center">Other great apps</h2>
 
