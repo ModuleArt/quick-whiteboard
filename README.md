@@ -4,7 +4,7 @@
 <h1 align="center">Quick Whiteboard</h1>
 
 <p align="center">
-  Quick Picture Viewer is a lightweight tool to draw or keep notes on your desktop background for Windows.
+  Quick Whiteboard is a lightweight tool to draw or keep notes on your desktop background for Windows.
 </p>
 
 <p align="center">
