@@ -1,6 +1,6 @@
 <Application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<VisualElements
-		BackgroundColor="#F1CD7E"
+		BackgroundColor="#76C8EE"
 		ShowNameOnSquare150x150Logo="on"
 		ForegroundText="dark" 
 		DisplayName="Whiteboard"

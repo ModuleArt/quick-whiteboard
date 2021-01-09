@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Quick Whiteboard"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.0.1"
 #define MyAppPublisher "Module Art"
 #define MyAppURL "https://moduleart.github.io/quick-whiteboard"
 #define MyAppExeName "quick-whiteboard.exe"

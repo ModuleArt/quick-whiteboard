@@ -88,12 +88,12 @@
 			this.setBtn.Cursor = System.Windows.Forms.Cursors.Default;
 			this.setBtn.FlatAppearance.BorderColor = System.Drawing.Color.Red;
 			this.setBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.setBtn.Location = new System.Drawing.Point(576, 368);
+			this.setBtn.Location = new System.Drawing.Point(440, 368);
 			this.setBtn.Margin = new System.Windows.Forms.Padding(0);
 			this.setBtn.Name = "setBtn";
-			this.setBtn.Size = new System.Drawing.Size(64, 32);
+			this.setBtn.Size = new System.Drawing.Size(200, 32);
 			this.setBtn.TabIndex = 1;
-			this.setBtn.Text = "Set";
+			this.setBtn.Text = "Set as desktop background";
 			this.setBtn.UseVisualStyleBackColor = false;
 			this.setBtn.Click += new System.EventHandler(this.setBtn_Click);
 			// 
