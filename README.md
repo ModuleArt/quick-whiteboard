@@ -28,13 +28,13 @@
 
 <h2 align="center">Install</h2>
 
-| Windows | Version | Codename | Release date | Size | Downloads | Link |
+| Windows | Version | Codename | Release date | Size | Downloads | |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 7-10 | <a href="https://github.com/ModuleArt/quick-whiteboard/releases/tag/v1.0.1">v1.0.1</a> (Stable) | Froggy | Jan 9, 2021 | 1.7 MB | ![GitHub Releases (by Release)](https://img.shields.io/github/downloads/ModuleArt/quick-whiteboard/v1.0.1/total?label=latest%40v1.0.1) | <a href="https://github.com/ModuleArt/quick-whiteboard/releases/download/v1.0.1/QuickWhiteboard-Setup.exe">Download (.exe)</a> |
+| 7-10 | <a href="https://github.com/ModuleArt/quick-whiteboard/releases/tag/v1.0.1">v1.0.1</a> (Stable) | Froggy | Jan 9, 2021 | 1.7 MB | ![GitHub Releases (by Release)](https://img.shields.io/github/downloads/ModuleArt/quick-whiteboard/v1.0.1/total?label=latest%40v1.0.1) | <a href="https://github.com/ModuleArt/quick-whiteboard/releases/download/v1.0.1/QuickWhiteboard-Setup.exe">Download</a> |
 
 <h2 align="center">Other great apps</h2>
 
-| Icon | App name | Last commit date | Last release date | Description |
+| Icon | App | Last commit | Last release | Description |
 | :---: | :---: | :---: | :---: | :---: |
 | <img src="https://github.com/ModuleArt/quick-picture-viewer/blob/master/quick-picture-viewer/resources/imgs/picture64.png?raw=true"/> | <a href="https://github.com/ModuleArt/quick-picture-viewer/">Quick Picture Viewer</a> | ![GitHub last commit](https://img.shields.io/github/last-commit/ModuleArt/quick-picture-viewer) | ![GitHub Release Date](https://img.shields.io/github/release-date/ModuleArt/quick-picture-viewer) | Lightweight, versatile desktop image viewer for Windows. The best replacement for the default Windows photo viewer. |
 | <img src="https://github.com/ModuleArt/quick-color-picker/blob/master/quick-color-picker/resources/imgs/picker64.png?raw=true"/> | <a href="https://github.com/ModuleArt/quick-color-picker/">Quick Color Picker</a> | ![GitHub last commit](https://img.shields.io/github/last-commit/moduleart/quick-color-picker) | ![GitHub Release Date](https://img.shields.io/github/release-date/ModuleArt/quick-color-picker) | Lightweight desktop color picker and color editor utility for Windows. |
